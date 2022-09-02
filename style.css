@@ -1,0 +1,133 @@
+* {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.bg-black {
+    background: rgba(0, 0, 0, 0.55)!important;
+}
+
+.bg-image {
+    background-image: url("images/hero-bg.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-item .nav-link{
+    margin-right: 1.5rem; 
+    position:relative;
+
+}
+
+.nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0%;
+    left: 0%;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    
+}
+
+.nav-item .nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bg-gray-light{
+    background-color: #F5F5F5;
+}
+
+.box-shadow-full {
+    padding: 3rem 1.25rem;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+
+}
+
+.icon{
+    width:2rem;
+    height: 2rem;
+    font-size: 2.5rem;
+}
+
+.counter-icon{
+    border-width:15px !important;
+}
+
+
+
+section#counter{
+background-image: url('images/post-3.jpg');
+background-position: center center;
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+}
+
+.title-box{
+    position: relative;
+}
+.title-box::after{
+    content: "";
+    width: 4%;
+    height: 5%;
+    position: absolute;
+    bottom:0%;
+    left:48%;
+    background-color: #0078ff;
+}
+
+.testimonial{
+    background-image: url('images/overlay-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position:relative;
+}
+
+.testimonial::after, #counter::after{
+  content: "";
+  background-color: #0078ff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.7;
+}
+
+.carousel, .single-counter{
+    z-index:1;
+}
+
+.carousel-indicators [data-bs-target]{
+  width:12px;
+  height:12px;
+  border-radius: 50%;
+}
+
